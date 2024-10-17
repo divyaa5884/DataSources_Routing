@@ -1,17 +1,21 @@
 package com.shard.model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "book")
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Book {
 
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     @Column(name = "id", updatable = false, nullable = false)
-    private long id; // changing int to long
+    private Long id;
 
     @Column(name = "name", nullable = false)
     private String name;
