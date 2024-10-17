@@ -1,5 +1,6 @@
 - Created multiple datasources(here 3): based on a simple hash logic for id datasource<x> = (id % 3) + 1
-eg.  id%3 == 0 => data will be fetched/saved from datasource 1
+
+        eg.  id%3 == 0 => data will be fetched/saved from datasource 1
 
 - Used following to create db
 
